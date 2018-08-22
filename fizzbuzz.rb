@@ -3,15 +3,18 @@
 
 def fizzbuzz(value)
   answer = " "
+  failure = 0
   if(value % 3 == 0 && value % 5 != 0)
     answer = "Fizz"
     return answer
   elsif(value % 5 == 0 && value % 3 != 0)
     answer = "Buzz"
     return answer
-  elsif()
-
+  elsif(value % 3 == 0 && value % 5 == 0)
+    answer = "FizzBuzz"
+    return answer
   else
-
+    failure = nil
+    return failure
   end
 end
